@@ -1,6 +1,6 @@
 # SecurARP
 
-SecurARP is a cutting-edge network security tool designed to detect and thwart ARP Spoofing attacks. By accessing Address Resolution Protocol (ARP) traffic within your network, SecurARP identifies any malicious attempts to manipulate the ARP tables and redirect network traffic. SecurARP provides an essential layer of protection against this common and insidious form of attack, ensuring the integrity and security of your network infrastructure. Stay one step ahead of potential threats with SecurARP, the ultimate safeguard against ARP Spoofing.
+SecurARP is a cutting-edge network security tool designed to detect and thwart ARP Poisoning attacks. By accessing Address Resolution Protocol (ARP) traffic within your network, SecurARP identifies any malicious attempts to manipulate the ARP tables and redirect network traffic. SecurARP provides an essential layer of protection against this common and insidious form of attack, ensuring the integrity and security of your network infrastructure. Stay one step ahead of potential threats with SecurARP, the ultimate safeguard against ARP Spoofing.
 
 ## Table of Contents
 
@@ -26,22 +26,19 @@ Now you have a local copy of the project to work with.
 
 ## Usage
 
-To run this tool, open 'main.py' file in CMD.
+To run this tool, open 'run.py' file in CMD.
    
    ```shell
-   python main.py
+   python run.py
    ```
 ![Home Screen](Screenshots/1.png)
 
-Run the 'help' command to view all the available commands. Type any one of the commands and follow the on-screen instructions to use that command
-
-![Help Screen](Screenshots/2.png)
+The tool will start scanning the ARP Cache and find anomalies. If any anomaly is found it'll alert the user.
 
 ## Features
 
-- Password Protection: All your folders/files are password protected. The password are stored in secure manner to prevent password theft in any manner.
-- Webcam Security: If someone enters incorrect password for 3 times, their snapshot is captured by the webcam to later identify the perpetrator.
-- Hide Folder: All your sensitive and secret data stored inside the folder is hidden in a secure manner to prevent data theft.
+- Network Security: SecurARP will scan and keep your network free from any possible MiTM attacks.
+- Attacker IDs: SecurARP will display the attacker's IP and compromised MAC address if ARP Poisoning attack is detected.
 
 ## Contact Me
 
