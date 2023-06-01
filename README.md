@@ -1,16 +1,54 @@
-# ARP Poisoning Detection Tool
-## What is ARP and ARP Poisoning?
-ARP is a protocol that makes it possible for network messages to get to a particular network device. ARP converts Media Access Control (MAC) addresses into Internet Protocol (IP) addresses and the other way around. Devices often utilize ARP to get in touch with the router or gateway that gives them access to the Internet.  
-ARP spoofing, sometimes referred to as ARP poisoning, is a Man in the Middle (MitM) attack that enables attackers to eavesdrop on network device traffic. It involves a threat actor sending fake ARP packets across a LAN. As a result, the IP address of an authorized computer or server on the network is linked to the MAC address of an attacker. The attacker will start receiving any data meant for that IP address as soon as the attacker's MAC address is linked to a genuine IP address.
-## Functioning of the Tool
-This tool checks of ARP poisoning is happening or not by checking the ARP cache and looking for anomalies in the output file.
-This tool is written in **Python** language and the following modules are used:
-+ os
-+ itertools
-+ getpass  
-  
-Tool starts with running ***arp -a*** command on CMD and saving the output in a text file in ***C:\Users\Public*** directory. Then the output text file is formatted to ignore unnecessary string like “internet”, “interface”, etc. Now only IP Addresses and their corresponding MAC addresses are remaining and they are added as a key-value pair in a dictionary where key is IP Address and Value if MAC address.  
-The IP Addresses are unique and MAC Addresses are supposed to be unique. If any two IP Addresses have same MAC Address and ARP Poisoning is detected.  
-Two functions ***getPoisonedIPs(dict)*** and ***getPoisonedMACs(dict)*** are used to find these anomalies in the output file.
-## How to Install and Run the Tool
-Simply download *main.py* file and run the tool on the victim machines.
+# SecurARP
+
+SecurARP is a cutting-edge network security tool designed to detect and thwart ARP Spoofing attacks. By accessing Address Resolution Protocol (ARP) traffic within your network, SecurARP identifies any malicious attempts to manipulate the ARP tables and redirect network traffic. SecurARP provides an essential layer of protection against this common and insidious form of attack, ensuring the integrity and security of your network infrastructure. Stay one step ahead of potential threats with SecurARP, the ultimate safeguard against ARP Spoofing.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contact Me](#contact-me)
+
+## Installation
+
+To get a local copy of this project, you can clone it using Git. Follow the steps below:
+
+1. Open Command Prompt.
+2. Change the current working directory to the location where you want the cloned directory to be saved.
+3. Run the following command to clone the repository:
+
+   ```shell
+   git clone https://github.com/omsahare-14/SecurARP
+   ```
+4. After executing the command, the repository will be cloned to your local machine.
+
+Now you have a local copy of the project to work with.
+
+## Usage
+
+To run this tool, open 'main.py' file in CMD.
+   
+   ```shell
+   python main.py
+   ```
+![Home Screen](Screenshots/1.png)
+
+Run the 'help' command to view all the available commands. Type any one of the commands and follow the on-screen instructions to use that command
+
+![Help Screen](Screenshots/2.png)
+
+## Features
+
+- Password Protection: All your folders/files are password protected. The password are stored in secure manner to prevent password theft in any manner.
+- Webcam Security: If someone enters incorrect password for 3 times, their snapshot is captured by the webcam to later identify the perpetrator.
+- Hide Folder: All your sensitive and secret data stored inside the folder is hidden in a secure manner to prevent data theft.
+
+## Contact Me
+
+If you have any questions, feedback, or suggestions, feel free to reach out to me.
+
+- Name: Om Sahare
+- Email: [omsahareofficial@gmail.com](mailto:omsahareofficial@gmail.com)
+- LinkedIn: [om-sahare-253b30207/](https://www.linkedin.com/in/om-sahare-253b30207/)
+- Twitter: [@omsahare14](https://twitter.com/omsahare14)
+
