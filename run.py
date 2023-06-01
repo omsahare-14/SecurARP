@@ -1,6 +1,4 @@
 import os
-# from itertools import chain
-# from getpass import getuser
 import asciiArt
 import poisonedIPs
 import poisonedMACs
