@@ -45,7 +45,7 @@ The tool will start scanning the ARP Cache and find anomalies. If any anomaly is
 If you have any questions, feedback, or suggestions, feel free to reach out to me.
 
 - Name: Om Sahare
-- Email: [omsahareofficial@gmail.com](mailto:omsahareofficial@gmail.com)
-- LinkedIn: [om-sahare-253b30207/](https://www.linkedin.com/in/om-sahare-253b30207/)
+- Email: [omsahare002@gmail.com](mailto:omsahare002@gmail.com)
+- LinkedIn: [@omsahare14](https://www.linkedin.com/in/omsahare14/)
 - Twitter: [@omsahare14](https://twitter.com/omsahare14)
 
